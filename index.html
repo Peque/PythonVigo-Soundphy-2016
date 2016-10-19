@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Miguel Sánchez de León Peque">
+  <meta name="dcterms.date" content="2016-10-19">
+  <title>Soundphy</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="css/theme/custom.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+<div class='footer'>Python Vigo | <a href="https://www.python-vigo.es/">https://www.python-vigo.es/</a></div>
+    <div class="slides">
+
+<section data-background="figures/background.svg">
+  <h1 class="title">Soundphy</h1>
+  <h2 class="author">Miguel Sánchez de León Peque</h2>
+  <h3 class="date">2016-10-19</h3>
+</section>
+
+<section data-background="figures/background.svg"><section id="history" class="titleslide slide level1"><h1>History</h1></section><section class="slide level2">
+
+<figure>
+<img src="./figures/telegram_bot_contest.jpg" style="width:48.0%" />
+</figure>
+</section><section id="ideas" class="slide level2">
+<h1>Ideas</h1>
+<blockquote>
+<p>Best bots are inline bots, those which you can share with others in a conversation!</p>
+</blockquote>
+<ul>
+<li class="fragment"><sub><del>Gifs bot</del></sub></li>
+<li class="fragment"><sub><del>Videos bot</del></sub></li>
+<li class="fragment"><strong>Instants bot</strong></li>
+</ul>
+</section><section id="problem" class="slide level2">
+<h1>Problem</h1>
+<ul>
+<li class="fragment">Gifs bot → giphy.com</li>
+<li class="fragment">Videos bot → youtube.com</li>
+<li class="fragment"><strong>Instants bot → ???</strong></li>
+</ul>
+</section></section>
+<section data-background="figures/background.svg"><section id="soundphy" class="titleslide slide level1"><h1>Soundphy</h1></section><section id="technologies" class="slide level2">
+<h1>Technologies</h1>
+<ul>
+<li class="fragment">PHP</li>
+</ul>
+<div class="fragment">
+<figure>
+<img src="./figures/troll.svg" style="width:60.0%" />
+</figure>
+</div>
+</section><section id="seriously" class="slide level2">
+<h1>Seriously</h1>
+<ul>
+<li class="fragment">Python</li>
+<li class="fragment">Spiders: <code>requests</code>, <code>bs4</code></li>
+<li class="fragment">Search engine: <code>whoosh</code></li>
+<li class="fragment">Web services: <code>flask</code></li>
+<li class="fragment">Bot: <code>python-telegram-bot</code></li>
+<li class="fragment">Deployment: OpenShift Online</li>
+</ul>
+</section><section id="it-works" class="slide level2">
+<h1>It works!</h1>
+<figure>
+<img src="./figures/soundphybot_in_action.png" style="width:70.0%" />
+</figure>
+</section><section id="but..." class="slide level2">
+<h1>But...</h1>
+<figure>
+<img src="./figures/soundphybot_error.png" style="width:70.0%" />
+</figure>
+</section></section>
+<section data-background="figures/background.svg"><section id="soundphy-ii" class="titleslide slide level1"><h1>Soundphy (II)</h1></section><section id="idea" class="slide level2">
+<h1>Idea</h1>
+<ul>
+<li>Sound database</li>
+<li>Collaborative</li>
+<li>User access control</li>
+<li>Machine-friendly access</li>
+<li>Human-friendly access</li>
+</ul>
+</section><section id="technologies-1" class="slide level2">
+<h1>Technologies</h1>
+<ul>
+<li>Python</li>
+<li><code>django</code></li>
+<li><code>django-rest-framework</code></li>
+<li>...</li>
+</ul>
+</section><section id="free" class="slide level2">
+<h1>Free</h1>
+<ul>
+<li><a href="https://github.com/Soundphy" class="uri">https://github.com/Soundphy</a></li>
+<li>BSD license (3-clause)</li>
+</ul>
+<figure>
+<img src="./figures/soundphy_logo.svg" style="width:15.0%" />
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="./figures/developers.gif" style="width:60.0%" />
+</figure>
+</section></section>
+<section data-background="figures/background.svg"><section id="tasks" class="titleslide slide level1"><h1>Tasks</h1></section><section id="ideally" class="slide level2">
+<h1>Idea(lly)</h1>
+<ul>
+<li>Independent/parallel</li>
+<li>All levels</li>
+<li>All interests/backgrounds</li>
+</ul>
+</section><section id="starting-point" class="slide level2">
+<h1>Starting point</h1>
+<ul>
+<li><a href="https://github.com/Soundphy/soundphy" class="uri">https://github.com/Soundphy/soundphy</a></li>
+<li>Basic REST API</li>
+<li>Upload and store files</li>
+<li>Simple models</li>
+<li>Simple interface</li>
+<li>No tests</li>
+<li>...</li>
+</ul>
+</section><section class="slide level2">
+
+<figure>
+<img src="./figures/soundphy_rest_empty.png" style="width:100.0%" />
+</figure>
+</section><section class="slide level2">
+
+<figure>
+<img src="./figures/soundphy_rest_list.png" style="width:100.0%" />
+</figure>
+</section><section id="first-steps" class="slide level2">
+<h1>First steps</h1>
+<ul>
+<li>Installing Python 3.5</li>
+<li>Working with Git and GitHub</li>
+<li>Installing an editor</li>
+</ul>
+</section><section id="users" class="slide level2">
+<h1>Users</h1>
+<ul>
+<li>User registration</li>
+<li>Access control in the REST API</li>
+</ul>
+</section><section id="models" class="slide level2">
+<h1>Models</h1>
+<ul>
+<li>Extend/improve the current models</li>
+<li>Keep history (avoid DELETE)</li>
+</ul>
+</section><section id="sounds" class="slide level2">
+<h1>Sounds</h1>
+<ul>
+<li>Calculate the duration of sounds</li>
+<li>Infer other useful parameters</li>
+</ul>
+</section><section id="database" class="slide level2">
+<h1>Database</h1>
+<ul>
+<li>Integrate a search engine</li>
+</ul>
+</section><section id="tests" class="slide level2">
+<h1>Tests</h1>
+<ul>
+<li><code>pytest</code></li>
+<li>Travis integration</li>
+</ul>
+</section><section id="documentation" class="slide level2">
+<h1>Documentation</h1>
+<ul>
+<li><code>sphinx</code></li>
+<li>Read the Docs integration</li>
+</ul>
+</section><section id="deployment" class="slide level2">
+<h1>Deployment</h1>
+<ul>
+<li>OpenShift Online</li>
+</ul>
+</section><section id="other" class="slide level2">
+<h1>Other?</h1>
+</section></section>
+<section data-background="figures/background.svg"><section id="let-the-fun-begin" class="titleslide slide level1"><h1>Let the fun begin!</h1></section><section id="thank-you" class="slide level2">
+<h1>Thank you!</h1>
+<ul>
+<li>Questions?</li>
+<li>Comments?</li>
+<li>Suggestions?</li>
+</ul>
+</section><section id="possible-groups" class="slide level2">
+<h1>Possible groups</h1>
+<ul>
+<li>First steps</li>
+<li>Users</li>
+<li>Models</li>
+<li>Sounds</li>
+<li>Database</li>
+<li>Tests</li>
+<li>Documentation</li>
+<li>Deployment</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
