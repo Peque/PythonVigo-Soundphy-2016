@@ -1,6 +1,6 @@
 % Soundphy
 % Miguel Sánchez de León Peque
-% 2016-10-20
+% 2017-02-16
 
 # History
 
@@ -25,14 +25,6 @@
 # Soundphy
 
 ## Technologies
-
->- PHP
-
-. . .
-
-![](./figures/troll.svg){width=60%}
-
-## Seriously
 
 >- Python
 >- Spiders: `requests`, `bs4`
@@ -77,14 +69,6 @@
 
 ![](./figures/developers.gif){width=60%}
 
-# Tasks
-
-## Idea(lly)
-
-- Independent/parallel
-- All levels
-- All interests/backgrounds
-
 ## Starting point
 
 - [https://github.com/Soundphy/soundphy](https://github.com/Soundphy/soundphy)
@@ -92,7 +76,7 @@
 - Upload and store files
 - Simple models
 - Simple interface
-- No tests
+- CI infraestructure
 - ...
 
 ---
@@ -103,44 +87,47 @@
 
 ![](./figures/soundphy_rest_list.png){width=100%}
 
+# Tasks
+
+## Idea(lly)
+
+- Independent/parallel
+- All levels
+- All interests/backgrounds
+
 ## First steps
 
-- Installing Python 3.5
-- Working with Git and GitHub
+- Installing Python 3
 - Installing an editor
+- Working with Git and GitHub
 
 ## Users
 
 - User registration
 - Access control in the REST API
+- (Tests)
 
 ## Models
 
 - Extend/improve the current models
 - Keep history (avoid DELETE)
+- (Tests)
 
 ## Sounds
 
 - Calculate the duration of sounds
 - Infer other useful parameters
+- (Tests)
 
 ## Database
 
 - Integrate a search engine
-
-## Tests
-
-- `pytest`
-- Travis integration
-
-## Documentation
-
-- `sphinx`
-- Read the Docs integration
+- (Tests)
 
 ## Deployment
 
 - OpenShift Online
+- (Documentation)
 
 ## Other?
 
@@ -159,6 +146,4 @@
 - Models
 - Sounds
 - Database
-- Tests
-- Documentation
 - Deployment
